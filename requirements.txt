@@ -4,7 +4,6 @@ django-jet==1.0.7
 django-split-settings==0.3.0
 et-xmlfile==1.0.1
 jdcal==1.4
-mysqlclient==1.3.12
 openpyxl==2.5.4
 pkg-resources==0.0.0
 psycopg2==2.7.4

@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  db:
+    restart: always
+    container_name: postgres-cryptocurrencies
+    image: postgres:9.5.13-alpine
+    ports:
+      - "4000:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=crypto
+      - POSTGRES_PASSWORD=crypto123
+      - POSTGRES_DB=crypto
+
+volumes:
+  pgdata:
